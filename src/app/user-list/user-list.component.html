@@ -1,0 +1,5 @@
+<div *ngFor="let user of (users$ | async)!.users">
+  <app-user-card
+    [user] = 'user'
+  ></app-user-card>
+</div>

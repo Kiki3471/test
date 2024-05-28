@@ -1,0 +1,63 @@
+<p>{{data.title}}</p>
+<form 
+    class="example-form"
+    [formGroup] = "formGroup"
+>
+    <mat-form-field class="example-full-width">
+        <mat-label>Имя</mat-label>
+        <input 
+            formControlName = "name"
+            matInput 
+            placeholder="Имя"
+        >
+        <mat-error>
+            Поле Имя должно быть обязательным, минимум 2-а символа
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Фамилия</mat-label>
+        <input 
+            formControlName = "surname"
+            matInput 
+            placeholder="Фамилия"
+        >
+        <mat-error>
+            Поле Фамилия должно быть обязательным, минимум 2-а символа.
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input 
+            formControlName = "email"
+            matInput 
+            type="email" 
+            placeholder="Email"
+        >
+        <mat-error>
+            Поле Email должно быть обязательным и валидным как email.
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Телефон</mat-label>
+        <input 
+            formControlName = "phone"
+            matInput 
+            placeholder="Телефон"
+        >
+        <mat-error>
+            Поле телефон должно быть валидным для номеров российских операторов связи.
+        </mat-error>
+    </mat-form-field>
+    <div class="buttons">
+        <button 
+            mat-raised-button 
+            (click)="close()"
+        >Отмена</button>
+        <button 
+            mat-raised-button 
+            color="primary" 
+            (click)="save()"
+            [disabled]="formGroup.invalid"
+        >Сохранить</button>
+    </div>
+</form>

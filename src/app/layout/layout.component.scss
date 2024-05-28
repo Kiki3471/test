@@ -1,0 +1,40 @@
+.title{
+    color: #2F7FD5;
+    font-family: 'Roboto';
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.main {
+    border-radius: 20px;
+    background-color: white;
+}
+
+.plus{
+    color: white;
+    background-color: black;
+    border-radius: 5px
+}
+
+.spisok{
+    display: flex;
+}
+
+.surname{
+    position: absolute;
+    margin-left: 168px;
+}
+
+.email{
+    position: absolute;
+    margin-left: 296px;
+}
+
+.phone{
+    position: absolute;
+    left: 490px;
+}
+
+p{
+    font-family: 'Roboto';
+}

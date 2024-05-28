@@ -1,0 +1,31 @@
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
+.description{
+    display: flex;
+    font-family: 'Roboto';
+    top: 5px
+}
+
+.username{
+    position: absolute;
+    margin-left: 130px;
+}
+
+.email{
+    position: absolute;
+    margin-left: 260px;
+}
+
+.phone{
+    position: absolute;
+    left: 490px;
+}
+
+.name:hover{
+    cursor: pointer;
+    color: #2F7FD5;
+    text-decoration: underline;
+}

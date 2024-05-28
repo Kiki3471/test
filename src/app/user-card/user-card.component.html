@@ -1,0 +1,15 @@
+<div class="main">
+  <mat-checkbox 
+    [checked] = "marker"
+    color="primary"
+    (change)="change()"
+  >
+  </mat-checkbox
+  >
+  <div class="description">
+    <p class="name" (click)="editUser()">{{user.name}}</p>
+    <p class="username">{{user.surname}}</p>
+    <p class="email">{{user.email}}</p>
+    <p class="phone">{{user.phone}}</p>
+  </div>
+</div>

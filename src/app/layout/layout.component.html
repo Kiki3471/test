@@ -1,0 +1,25 @@
+<p class="title">Клиенты</p>
+<div class="main">
+  <div class="buttons">
+    <button mat-icon-button (click)="deleteUsers()">
+      <mat-icon>delete</mat-icon>
+    </button>
+    <button mat-icon-button (click)="addUser()">
+        <mat-icon class="plus">add_box</mat-icon>
+    </button>
+  </div>
+  <div class="spisok">
+    <mat-checkbox 
+        class="example-margin"
+        color="primary"
+        (change)="change($event.checked)"
+        [checked]="marker"
+      >
+    </mat-checkbox>
+    <p class="name">Имя</p>
+    <p class="surname">Фамилия</p>
+    <p class="email">Email</p>
+    <p class="phone">Телефон</p>
+  </div>
+  <app-user-list></app-user-list>
+</div>
